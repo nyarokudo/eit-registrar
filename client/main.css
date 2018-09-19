@@ -1,4 +1,134 @@
 body {
-  padding: 10px;
-  font-family: sans-serif;
+  background-color: #94618E;
+  background-attachment: fixed;
+ 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100%;
+  background: white;
+}
+header {
+  background: #f4decb;
+  padding: 20px 15px 15px 15px;
+  position: relative;
+}
+h1 {
+  font-size: 1.8em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  padding: 5% 18% 0%;
+  font-family: 'Ropa Sans', sans-serif;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+  padding: 0% 41%;
+  font-family: 'Ropa Sans', sans-serif;
+}
+.user {
+  background: #315481;
+  color: whitesmoke;
+}
+table {
+  table-layout: fixed ;
+  width: 100% ;
+  padding: 1% 2%;
+}
+.head, .values {
+  width: 20%;
+  padding: 5px 10px;
+}
+#delete {
+  background: #315481;
+  padding: 5px 10px;
+  width: 10%;
+}
+#header{
+  background: #315481;
+  color: white;
+}
+.head {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Ropa Sans', sans-serif;
+}
+.values {
+  display: table-cell;
+  vertical-align: inherit;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+form {
+  font-family: 'Ropa Sans', sans-serif;
+  padding: 2% 5%;
+  background: #f8eee7;
+}
+.checks {
+  padding: 0% 3%;
+}
+.button {
+  padding: 0% 4%;
+  font-family: 'Roboto', sans-serif;
+}
+input {
+  font-family: 'Roboto', sans-serif;
+}
+input[type="text"]{
+  width: 30%;
+}
+input[type="date"]{
+  width: 22%;
+  padding: 0% 0% 0% 3%;
+}
+label {
+  font: 20px;
+}
+.login-link-text {
+  width: 10vw;
+  font-family: 'Ropa Sans', sans-serif;
+  padding: 0% 15%;
+  text-transform: uppercase;
+}
+.login-link-and-dropdown-list{
+  width: 10vw;
+  font-family: 'Ropa Sans', sans-serif;
+  padding: 10% 0% 5%;
+}
+#login-buttons .login-button, .accounts-dialog .login-button {
+  background: #315481;
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 16px;
+}
+#login-password-label{
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 14px;
+}
+#login-username-label {
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 14px;
+}
+#signup-link {
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 14px;
+}
+.message {
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 5% 32%;
 }

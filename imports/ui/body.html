@@ -1,0 +1,51 @@
+<body>
+    <div class="container">
+        <header>
+            <h1>MEST Entrepreneurs-In-Training</h1>
+            <h2>REGISTRA</h2>
+        </header>
+        {{> loginButtons}}
+
+        {{#if currentUser}}
+            <form class="new-eit" id="new-eit">
+                <label>First Name:</label> <input type="text" name="first" onKeyPress="return noenter()" placeholder="Type to add first name" required />
+                <label>Last Name:</label> <input type="text" name="last" onKeyPress="return noenter()" placeholder="Type to add last name" required /><br>
+                <label>Gender:</label> <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other<br>
+                <label>D.O.B</label> <input type="date" onKeyPress="return noenter()" name="dob" required> 
+                <input type="submit" value="Submit" id='submit' class='submit'>
+            </form>
+            <form class="update-eit" id="update-eit" hidden>
+                <label>First Name:</label> <input type="text" name="first" onKeyPress="return noenter()" placeholder="Type to add first name" required />
+                <label>Last Name:</label> <input type="text" name="last" onKeyPress="return noenter()" placeholder="Type to add last name" required /><br>
+                <label>Gender:</label> <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Other"> Other<br>
+                <label>D.O.B</label> <input type="date" onKeyPress="return noenter()" name="dob" required>
+                <input type="submit" id='Update' value="Update" class='Update'>
+                <input type='hidden' name='id'>
+            </form>
+
+            <table>
+                <tr id="header">
+                    <th id="delete"><button class="delete">DEL</button></th>
+                    <th class="head">First Name</th>
+                    <th class="head">Last Name</th>
+                    <th class="head">Gender</th>
+                    <th class="head">D.O.B</th>
+                    <th class="head"></th>
+                </tr>
+                
+                {{> eitlist}}
+            </table>
+        {{else}}
+            <p class="message">Sign in to see Registra</p>
+        {{/if}}
+    </div>
+    <script>
+        function noenter() {
+             return !(window.event && window.event.keyCode == 13);
+        }
+    </script>
+</body>
